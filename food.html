@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - SmartPOS</title>
-    <link rel="stylesheet" href="styles/sidebar.css" />
+    <title>Sidebar</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="js/dashboard.js" defer></script>
-    <script src="js/sidebar.js"></script>
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/food.css" />
+    <link rel="stylesheet" href="styles/breadcrumb.css" />
   </head>
   <body>
     <div class="sidebar">
@@ -88,42 +87,21 @@
       </nav>
     </div>
 
-    <main class="dashboard">
-      <h1>Dashboard</h1>
-
-      <section class="order-summary">
-        <div class="info-box">
-          <h2>Total Orders</h2>
-          <span id="total-orders">--</span>
-        </div>
-        <div class="info-box">
-          <h2>Current Order Number</h2>
-          <span id="current-order-number">--</span>
-        </div>
-        <div class="info-box">
-          <h2>Employee Work Time</h2>
-          <span>9:00 AM - 5:00 PM</span>
-        </div>
-      </section>
-
-      <div class="ascii-f1">
-        <pre>
-       ______
-       /|_||_\`.__
-      (   _    _ _\
-      =`-(_)--(_)-'  
-
-          ORDER #2
-    </pre
-        >
+    <main>
+      <div class="breadcrumb">
+        <img
+          src="assets/arrowleft.svg"
+          alt="Previous"
+          class="back-arrow"
+          onclick="window.history.back()"
+        />
+        <span class="breadcrumb-text"></span>
       </div>
-
-      <section class="current-order">
-        <h2>Current Order Details</h2>
-        <div id="order-details">
-          <p>No active orders.</p>
-        </div>
-      </section>
+      <h1>Food Menu</h1>
+      <div id="menu" class="menu"></div>
     </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - SmartPOS</title>
+    <title>Bills - SmartPOS</title>
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="js/dashboard.js" defer></script>
-    <script src="js/sidebar.js"></script>
+    <link rel="stylesheet" href="styles/breadcrumb.css" />
+    <link rel="stylesheet" href="styles/bills.css" />
+    <script src="js/sidebar.js" defer></script>
   </head>
   <body>
     <div class="sidebar">
@@ -88,41 +88,55 @@
       </nav>
     </div>
 
-    <main class="dashboard">
-      <h1>Dashboard</h1>
+    <main>
+      <div class="breadcrumb">
+        <a href="index.html">Dashboard</a> > <span>Bills</span>
+      </div>
 
-      <section class="order-summary">
-        <div class="info-box">
-          <h2>Total Orders</h2>
-          <span id="total-orders">--</span>
-        </div>
-        <div class="info-box">
-          <h2>Current Order Number</h2>
-          <span id="current-order-number">--</span>
-        </div>
-        <div class="info-box">
-          <h2>Employee Work Time</h2>
-          <span>9:00 AM - 5:00 PM</span>
+      <section class="bills-summary">
+        <h1>Financial Overview</h1>
+        <div class="bill-info">
+          <div class="total-revenue">
+            <h2>Total Revenue</h2>
+            <p>$25,000</p>
+          </div>
+          <div class="total-expenses">
+            <h2>Total Expenses</h2>
+            <p>$15,000</p>
+          </div>
+          <div class="net-profit">
+            <h2>Net Profit</h2>
+            <p>$10,000</p>
+          </div>
         </div>
       </section>
 
-      <div class="ascii-f1">
-        <pre>
-       ______
-       /|_||_\`.__
-      (   _    _ _\
-      =`-(_)--(_)-'  
-
-          ORDER #2
-    </pre
-        >
-      </div>
-
-      <section class="current-order">
-        <h2>Current Order Details</h2>
-        <div id="order-details">
-          <p>No active orders.</p>
-        </div>
+      <section class="recent-transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#00123</td>
+              <td>2024-12-04</td>
+              <td>$150</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>#00124</td>
+              <td>2024-12-05</td>
+              <td>$75</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
   </body>

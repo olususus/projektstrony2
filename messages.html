@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - SmartPOS</title>
-    <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="js/dashboard.js" defer></script>
-    <script src="js/sidebar.js"></script>
+    <title>Messages</title>
+    <link rel="stylesheet" href="/styles/messages.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/sidebar.css" />
   </head>
   <body>
     <div class="sidebar">
@@ -87,43 +85,52 @@
         </div>
       </nav>
     </div>
-
-    <main class="dashboard">
-      <h1>Dashboard</h1>
-
-      <section class="order-summary">
-        <div class="info-box">
-          <h2>Total Orders</h2>
-          <span id="total-orders">--</span>
-        </div>
-        <div class="info-box">
-          <h2>Current Order Number</h2>
-          <span id="current-order-number">--</span>
-        </div>
-        <div class="info-box">
-          <h2>Employee Work Time</h2>
-          <span>9:00 AM - 5:00 PM</span>
-        </div>
+    <main class="messages-main">
+      <section class="messages-header">
+        <h1>Messages</h1>
+        <button class="new-message-btn">New Message</button>
       </section>
 
-      <div class="ascii-f1">
-        <pre>
-       ______
-       /|_||_\`.__
-      (   _    _ _\
-      =`-(_)--(_)-'  
+      <section class="messages-list">
+        <div class="message">
+          <div class="message-info">
+            <img src="assets/user1.jpg" alt="User 1" class="message-avatar" />
+            <div class="message-text">
+              <h2 class="message-sender">John Doe</h2>
+              <p class="message-preview">
+                Hey, do you have time to talk about the new project?
+              </p>
+            </div>
+          </div>
+          <span class="message-time">10:45 AM</span>
+        </div>
 
-          ORDER #2
-    </pre
-        >
-      </div>
+        <div class="message">
+          <div class="message-info">
+            <img src="assets/user2.jpg" alt="User 2" class="message-avatar" />
+            <div class="message-text">
+              <h2 class="message-sender">Jane Smith</h2>
+              <p class="message-preview">Meeting at 3 PM. Don't forget!</p>
+            </div>
+          </div>
+          <span class="message-time">9:15 AM</span>
+        </div>
 
-      <section class="current-order">
-        <h2>Current Order Details</h2>
-        <div id="order-details">
-          <p>No active orders.</p>
+        <div class="message">
+          <div class="message-info">
+            <img src="assets/user3.jpg" alt="User 3" class="message-avatar" />
+            <div class="message-text">
+              <h2 class="message-sender">Michael Brown</h2>
+              <p class="message-preview">
+                Here are the latest sales figures...
+              </p>
+            </div>
+          </div>
+          <span class="message-time">Yesterday</span>
         </div>
       </section>
     </main>
+    <script src="/js/messages.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

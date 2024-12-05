@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (page === "index.html") {
     breadcrumbContent = "Dashboard > Main";
-  } else if (page === "pages/food.html") {
+  } else if (page === "food.html") {
     breadcrumbContent = "Food > Menu";
-  } else if (page === "pages/bills.html") {
+  } else if (page === "bills.html") {
     breadcrumbContent = "Bills > Payment";
   }
 
