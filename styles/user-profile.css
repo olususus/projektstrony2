@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Speedee", Arial, sans-serif;
+  background-color: #1a1a1a;
+}
+
+main {
+  margin-right: 200px;
+}
+.profile-main {
+  padding: 20px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.back-link {
+  color: #ffcc00;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-left {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+}
+
+.profile-photo {
+  margin-bottom: 20px;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  color: #fff;
+  text-align: center;
+}
+
+.profile-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.edit-profile {
+  margin-top: 30px;
+}
+
+.edit-btn {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #1a1a1a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ffb300;
+}

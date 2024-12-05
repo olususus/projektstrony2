@@ -1,0 +1,44 @@
+[
+  {
+    "name": "NOWOŚĆ! Burger Drwala z Kurkami",
+    "description": "O kurka! Nowy Drwal z Kurkami z soczystą wołowiną, wyjątkowym serowym kotletem kurkowym w panierce i chrupiącym boczkiem to idealne zimowe połączenie.",
+    "price": "25zl",
+    "weight": "300g",
+    "image": "../assets/food/drwal-kurki.jpg"
+  },
+  {
+    "name": "Burger Drwala",
+    "description": "Burger, dzięki któremu zima jest… pyszniejsza! Wyśmienity kotlet wołowy, panierowany kotlet serowy i chrupiący boczek.",
+    "price": "18zl",
+    "weight": "500g",
+    "image": "../assets/food/drwal.jpg"
+  },
+  {
+    "name": "Burger Drwala z Chrzanem",
+    "description": "Połączenie wyśmienitego kotleta wołowego, panierowanego kotleta serowego i chrupiącego boczku podkręcone wyrazistym sosem chrzanowym.",
+    "price": "20zl",
+    "weight": "200g",
+    "image": "../assets/food/drwal-chrzan.jpg"
+  },
+  {
+    "name": "Burger Drwala z Żurawiną",
+    "description": "Połączenie wyśmienitego kotleta wołowego, panierowanego kotleta serowego i chrupiącego boczku podkręcone wyrazistym sosem chrzanowym.",
+    "price": "20zl",
+    "weight": "200g",
+    "image": "../assets/food/drwal-zurawinka.jpg"
+  },
+  {
+    "name": "Burger Drwala z Kurczakiem",
+    "description": "Marzy Ci się połączenie soczystego kurczaka w złocistej panierce i rozpływającego się panierowanego sera? Znajdziesz je w tym burgerze! Podane z chrupiącymi liśćmi sałaty lodowej i aromatycznym sosem z przyprawami.",
+    "price": "20zl",
+    "weight": "200g",
+    "image": "../assets/food/drwal-kurczaczek.jpg"
+  },
+  {
+    "name": "NOWOŚĆ! McFlurry Zimowe Bounty",
+    "description": "Aksamitne lody o smaku waniliowym, rozpływająca się w ustach posypka Bounty, a do tego gęsta, słodka polewa o smaku czekoladowym, karmelowym lub truskawkowym. To połączenie rozkręci sezon!",
+    "price": "12zl",
+    "weight": "200g",
+    "image": "../assets/food/mcflurry-zima.jpg"
+  }
+]

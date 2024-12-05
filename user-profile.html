@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <title>Profil użytkownika</title>
     <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/food.css" />
-    <link rel="stylesheet" href="styles/breadcrumb.css" />
+    <link rel="stylesheet" href="styles/user-profile.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
+
   <body>
     <div class="sidebar">
       <div class="logo">
@@ -86,21 +86,30 @@
         </div>
       </nav>
     </div>
-
-    <main>
-      <div class="breadcrumb">
-        <img
-          src="assets/arrowleft.svg"
-          alt="Previous"
-          class="back-arrow"
-          onclick="window.history.back()"
-        />
-        <span class="breadcrumb-text"></span>
+    <main class="profile-main">
+      <div class="profile-header">
+        <h1>Profil użytkownika</h1>
+        <a href="index.html" class="back-link">
+          <img src="assets/arrowleft.svg" alt="Back" class="arrow-left" />
+          Powrót do dashboard
+        </a>
       </div>
-      <h1>Food Menu</h1>
-      <div id="menu" class="menu"></div>
+      <div class="profile-info">
+        <div class="profile-photo">
+          <img src="assets/misiupysiu.jpg" alt="User Avatar" />
+        </div>
+        <div class="profile-details">
+          <h2>John Doe</h2>
+          <p><strong>Rola:</strong> Waiter</p>
+          <p><strong>Czas pracy:</strong> 9:00 AM - 5:00 PM</p>
+          <p><strong>Email:</strong> john.doe@example.com</p>
+          <p><strong>Telefon:</strong> +1234567890</p>
+          <p><strong>Adres:</strong> 1234 Main Street, City, Country</p>
+        </div>
+      </div>
+      <div class="edit-profile">
+        <a href="edit-profile.html" class="edit-btn">Edytuj profil</a>
+      </div>
     </main>
-
-    <script src="js/script.js"></script>
   </body>
 </html>

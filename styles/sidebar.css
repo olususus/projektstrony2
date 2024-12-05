@@ -1,0 +1,137 @@
+.sidebar {
+  width: 250px;
+  background-color: #2b2b2b;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.sidebar .logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar nav ul li a:hover {
+  color: #ffcc00;
+}
+
+.sidebar nav ul li.active a {
+  color: #fff;
+}
+
+.sidebar nav ul li:hover ~ .nav-highlight {
+  transform: translateY(calc(var(--hover-index) * 55px));
+}
+
+.sidebar nav ul li:nth-child(1) {
+  --hover-index: 0;
+}
+.sidebar nav ul li:nth-child(2) {
+  --hover-index: 1;
+}
+.sidebar nav ul li:nth-child(3) {
+  --hover-index: 2;
+}
+.sidebar nav ul li:nth-child(4) {
+  --hover-index: 3;
+}
+.sidebar nav ul li:nth-child(5) {
+  --hover-index: 4;
+}
+
+.user-panel {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-top: auto;
+}
+
+.user-info {
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.user-role {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.work-time {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.view-profile-btn {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #1a1a1a;
+  padding: 3px 3px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.view-profile-btn:hover {
+  background-color: #ffb300;
+}
