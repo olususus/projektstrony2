@@ -9,3 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const sidebar = document.querySelector(".sidebar");
+
+hamburgerBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
