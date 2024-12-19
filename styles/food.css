@@ -3,7 +3,6 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   justify-items: center;
-  margin-right: 200px;
 }
 
 .food-item {

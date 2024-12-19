@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentOrderNumber = document.getElementById("current-order-number");
   const orderDetails = document.getElementById("order-details");
 
-  // Symulacja danych zamówień
+  W;
   const orders = [
     { id: 1, items: ["Drwal", "Fries"], status: "Completed" },
     { id: 2, items: ["Pizza", "Soda"], status: "In Progress" },
